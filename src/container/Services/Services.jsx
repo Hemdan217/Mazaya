@@ -31,51 +31,68 @@ const Services = () => {
   }, []);
   return (
     <>
-      <h2 className="head-text">Services</h2>
-      <div className="app__skils-container">
-        <motion.div className="app__Services-list">
-          {Services.map((item, idx) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5, ease: easeInOut }}
-              whileHover={{ scale: [1, 0.9] }}
-              key={idx}
-              className="app__Services-item"
-            >
-              <div className=" app__Services-Image">
-                <img src={urlFor(item.icon)} alt={item.name} />
-              </div>
-              <p className="p-text">{item.name}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-        <motion.div className="app__skils-experience">
-          {experience.map((item, idx) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5, ease: easeInOut }}
-              className="app__Services-item"
-            >
-              <div key={idx} className="app__Services-year">
-                <p>{item.year}</p>
-              </div>
-              <div>
-                {item.works.map((work, idx) => (
-                  <div key={idx} className="app__Services-title">
-                    <h4>{work.name}</h4>
-                    <p className="app__skils-company p-text">{work.company}</p>
-                    <p
-                      className="app__Services-desc p-text"
-                      style={{ marginTop: "0.5rem" }}
-                    >
-                      {work.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+      <h2 className="head-text">Our Services</h2>
+
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, ease: easeInOut }}
+        className="about__item"
+        style={{ width: "70" }}
+        whileHover={{ scale: [1, 0.9] }}
+      >
+        <p className="p-text" style={{ fontSize: "16px" }}>
+          <span className="bold-text">Mazaya Recruitment</span> is dedicated to
+          finding the right workforce for both Government and private sectors.
+          At the present, Mazaya Recruitment has almost 500+ engineers,
+          Technicians, Administrative clerks/secretaries, hotel staff, oil & gas
+          staff, aviation, shipbuilding, various construction and cleaning
+          workers under our sponsorship. The principle is to mobilize the
+          workers on short, medium and long term contracts as required by the
+          clients.
+        </p>
+      </motion.div>
+
+      <div className="row w-70  mb-2">
+        <div className="col-8">
+          MANPOWER SUPPLY We are specialize in providing manpower for onshore &
+          offshore, Oil & Gas, building construction, road construction, and all
+          other sectors.
+        </div>
+        <div className="col-4"></div>
+      </div>
+      <div className="row w-70  mb-2">
+        <div className="col-2"></div>
+        <div className="col-8">
+          {" "}
+          MANPOWER SUPPLY We are specialize in providing manpower for onshore &
+          offshore, Oil & Gas, building construction, road construction, and all
+          other sectors.
+        </div>
+        <div className="col-2"></div>
+      </div>
+      <div className="row w-100 mb-2">
+        <div className="col-4"></div>
+
+        <div className="col-8">
+          {" "}
+          MANPOWER SUPPLY We are specialize in providing manpower for onshore &
+          offshore, Oil & Gas, building construction, road construction, and all
+          other sectors.
+        </div>
+      </div>
+
+      <div class="custom-shape-divider-bottom-1692252277">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </>
   );
