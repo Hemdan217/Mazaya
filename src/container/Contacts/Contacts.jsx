@@ -39,18 +39,12 @@ const Contacts = () => {
       <h2 className="head-text">Contact Us</h2>
 
       <div
-        className="container-fluid p-0 m-0 m-auto"
-        style={{
-          width: "70%",
-          height: "700px",
-          margin: "auto",
-          textAlign: "center",
-        }}
+        className="container"
       >
-        <div className="map-responsive">
+        <div >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3631.530051751217!2d54.38563537597656!3d24.467084884643555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e662be8851fcd%3A0xf228ba3cf396fa30!2s7%20Al%20Bathniyyah%20St%20-%20Al%20Nahyan%20-%20E25%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1692257640401!5m2!1sen!2seg"
-            style={{ width: "800px", height: "400px", margin: "auto" }}
+            style={{ width: "100%", height: "400px", margin: "auto" }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

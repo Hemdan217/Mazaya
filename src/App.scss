@@ -1,3 +1,17 @@
+// HELPERS
+.w-10{
+  width: 10%;
+}
+.w-90{
+  width: 90%;
+}
+
+.text-primary{
+  color: var(--secondary-color);
+}
+// END HELPERS
+
+
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
@@ -55,7 +69,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--secondary-color);
   text-transform: capitalize;
 
   span {

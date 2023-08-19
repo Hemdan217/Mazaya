@@ -16,6 +16,7 @@ const Services = () => {
       .fetch(queryServices)
       .then((data) => {
         setServices(data);
+        console.log(data);
       })
       .catch((error) => {
         console.log(error.message);
@@ -30,71 +31,80 @@ const Services = () => {
       });
   }, []);
   return (
-    <>
-      <h2 className="head-text">Our Services</h2>
+    <section id="services">
+      <div className="container">
+        <h2 className="head-text">Our Services</h2>
 
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, ease: easeInOut }}
-        className="about__item"
-        style={{ width: "70" }}
-        whileHover={{ scale: [1, 0.9] }}
-      >
-        <p className="p-text" style={{ fontSize: "16px" }}>
-          <span className="bold-text">Mazaya Recruitment</span> is dedicated to
-          finding the right workforce for both Government and private sectors.
-          At the present, Mazaya Recruitment has almost 500+ engineers,
-          Technicians, Administrative clerks/secretaries, hotel staff, oil & gas
-          staff, aviation, shipbuilding, various construction and cleaning
-          workers under our sponsorship. The principle is to mobilize the
-          workers on short, medium and long term contracts as required by the
-          clients.
-        </p>
-      </motion.div>
-
-      <div className="row w-70  mb-2">
-        <div className="col-8">
-          MANPOWER SUPPLY We are specialize in providing manpower for onshore &
-          offshore, Oil & Gas, building construction, road construction, and all
-          other sectors.
-        </div>
-        <div className="col-4"></div>
-      </div>
-      <div className="row w-70  mb-2">
-        <div className="col-2"></div>
-        <div className="col-8">
-          {" "}
-          MANPOWER SUPPLY We are specialize in providing manpower for onshore &
-          offshore, Oil & Gas, building construction, road construction, and all
-          other sectors.
-        </div>
-        <div className="col-2"></div>
-      </div>
-      <div className="row w-100 mb-2">
-        <div className="col-4"></div>
-
-        <div className="col-8">
-          {" "}
-          MANPOWER SUPPLY We are specialize in providing manpower for onshore &
-          offshore, Oil & Gas, building construction, road construction, and all
-          other sectors.
-        </div>
-      </div>
-
-      <div class="custom-shape-divider-bottom-1692252277">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
+        <div
+        className="py-4"
         >
-          <path
-            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-            class="shape-fill"
-          ></path>
-        </svg>
+          <p className="p-text" style={{ fontSize: "16px" }}>
+            <span className="bold-text fs-5">Mazaya Recruitment</span> is dedicated
+            to finding the right workforce for both Government and private
+            sectors. At the present, Mazaya Recruitment has almost 500+
+            engineers, Technicians, Administrative clerks/secretaries, hotel
+            staff, oil & gas staff, aviation, shipbuilding, various construction
+            and cleaning workers under our sponsorship. The principle is to
+            mobilize the workers on short, medium and long term contracts as
+            required by the clients.
+          </p>
+        </div>
+      
+      <div className="position-relative">
+        <div className="clips d-none d-md-block"></div>
+      <div className="row  mb-2">
+          <div className="col-md-8 col-sm-12">
+            <div className="d-flex gap-2 align-items-center">
+              <div className="fs-2 raduis w-10 text-primary">01</div>
+              <p className="w-90">
+                <h4 className="text-primary">MANPOWER SUPPLY</h4>
+                We are specialize in providing manpower for onshore & offshore, Oil
+& Gas, building construction, road construction, and all other
+sectors.
+              </p>
+            </div>
+          </div>
+          <div className="col-4"></div>
+        </div>
+        <div className="row mb-2">
+          <div className="col-2 d-md-block d-none"></div>
+          <div className="col-md-8 col-sm-12">
+            <div className="d-flex gap-2">
+              <div className="fs-3 raduis w-10 text-primary">02</div>
+              <p className="w-90">
+                <h4 className="text-primary">
+                HR OUTSOURCING
+                </h4>
+                We supply clients with highly qualified workers for all categories un
+our sponsorship. We also provide the workers with their
+Accommodation, Food allowance, Transportation while working un
+your supervision.
+              </p>
+            </div>
+          </div>
+          <div className="col-2 d-md-block d-none"></div>
+        </div>
+        <div className="row w-100 mb-2">
+          <div className="col-4 d-md-block d-none"></div>
+
+          <div className="col-md-8">
+            <div className="d-flex gap-2">
+              <div className="fs-3 raduis w-10 text-primary">03</div>
+              <p className="w-90">
+                <h4 className="text-primary">
+                PROJECT STAFFING
+                </h4>
+                We have a professional team for
+selecting and training individuals
+for specific job functions
+required by the client,
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+      </div>
+    </section>
   );
 };
 
