@@ -37,7 +37,7 @@ export default function Navbar() {
               }}
             />
             <ul>
-              {["home", "about", "work", "skills", "contact"].map(
+              {["home", "message", "about", "services", "contact"].map(
                 (item, idx) => (
                   <li
                     key={idx}

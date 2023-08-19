@@ -3,6 +3,7 @@ import "./Header.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import DraftsIcon from "@mui/icons-material/Drafts";
 import wrap from "../../components/wraper/wrap";
 import Typewriter from "typewriter-effect";
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString("Hello World!")
+                    .typeString("Contact Us")
                     .pauseFor(2500)
                     .deleteAll()
                     .start();
@@ -49,8 +50,18 @@ const Header = () => {
               />
             </h4>
             <h5>
-              <PhoneAndroidIcon />
+              <PhoneAndroidIcon className="mx-2" />
               02-4433622
+            </h5>
+            <h5>
+              <DraftsIcon className="mx-2" />
+              <a
+                href="mailto:info@mazayaad.com"
+                className="text-decoration-none"
+                style={{ color: "inherit" }}
+              >
+                info@mazayaad.com
+              </a>
             </h5>
           </motion.div>
         </div>
