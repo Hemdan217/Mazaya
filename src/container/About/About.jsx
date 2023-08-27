@@ -35,7 +35,7 @@ const About = () => {
         >
           <p className="p-text" style={{ fontSize: "16px" }}>
             <span className="bold-text">Mazaya Recruitment.</span> Mazaya
-            Recruitment is led by Chief Executive Director, Engr. Walid El
+            Recruitment is led by Chief Executive Director, Eng. Walid El
             Bahrawy. From its humble beginnings, Mazaya Recruitment has grown
             and become one of the most leading Manpower supply & Recruitment
             company in Abu Dhabi, Dubai & other Emirates. Operating in the
@@ -57,7 +57,7 @@ const About = () => {
         </motion.div>
       </div>
       <h6 className="head-text" style={{ fontSize: "20px" }}>
-        <span>Engr. Walid El Bahrawy</span>
+        <span>Eng. Walid El Bahrawy</span>
       </h6>{" "}
       <span className="bold-text">Chairman</span>
     </>

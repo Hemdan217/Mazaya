@@ -14,10 +14,15 @@ const Header = () => {
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className=" app__header-badge mb-5"
-            style={{ justifyContent: "center" }}
+            className=" app__header-badge mb-5 start-md-0"
+            style={{
+              justifyContent: "center",
+              position: "relative",
+              left: "100%",
+              backgroundColor: "rgb(35,50,57)",
+            }}
           >
-            <img src={images.logo} alt="img" />
+            <img src={images.logo2} alt="img" style={{ width: "280px" }} />
           </motion.div>
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}

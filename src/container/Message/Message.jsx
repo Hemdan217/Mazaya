@@ -76,7 +76,7 @@ const About = () => {
         </motion.div>
       </div>
       <h6 className="head-text" style={{ fontSize: "20px" }}>
-        <span>Engr. Walid El Bahrawy</span>
+        <span>Eng. Walid El Bahrawy</span>
       </h6>{" "}
       <span className="bold-text">Chairman</span>
     </>
